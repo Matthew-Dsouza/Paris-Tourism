@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    color: #f54896;
+}
+
+.navbar {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-right: 75px;
+    margin-left: 20px;
+}
+
+.website_brand_logo {
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.nav_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 7px;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: solid;
+    border-width: 10px;
+    border-color: #f54896;
+}
+
+.contact_button {
+    background: #000;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 25px;
+    margin-left: 7px;
+    border: none;
+}
+/* 
+
+
+
+
+
+HERO */
+
+.hero_info h4 {
+    font-size: 13px;
+}
+
+.hero_info h1 {
+    font-size: 35px;
+}
+
+.hero_info p {
+    color: gray;
+    font-size: 13px;
+}
+
+.hero_extra_info {
+    font-size: 13px;
+}
+
+.hero_info button {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hero_card {
+    /* dont touch  */
+    height: 305px;
+}
+
+.hero_card_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero_card_body {
+    background: #f54896;
+}
+
+.hero_card_body p {
+    font-size: 13px;
+    margin: 1.1rem 0;
+}
+/* 
+
+
+
+
+
+EXPLORE */
+
+.sub_section {
+    z-index: -1;
+    width: 100%;
+    height: 450px;
+    object-fit: fill;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI5OKynGjyzgf93N55BqdsKc9X_GUjWHcvgw&usqp=CAU");
+    margin-bottom: 70px;
+}
+
+.subsection_images_container {
+    width: 100%;
+    padding: 40px;
+}
+
+.row1_image1 {
+    height: 175px;
+}
+
+.row1_image2 {
+    height: 150px;
+}
+
+.row2_image1 {
+    height: 150px;
+}
+
+.row2_image2 {
+    height: 185px;
+}
+
+.row2_image3 {
+    height: 160px;
+}
+
+.image1,
+.image2,
+.image3 {
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+}
+/* 
+
+
+
+
+
+ABOUT PARIS */
+
+#aboutParis_container {
+    padding-top: 40px;
+}
+
+.aboutParis_info p {
+    font-size: 14px;
+    color: gray;
+}
+
+.aboutParis_image {
+    height: 380px;
+}
+
+.aboutParis_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* 
+
+
+
+
+
+PRICING */
+
+.pricing_container {
+    background-color: rgba(128, 128, 128, 0.144);
+}
+
+.packages_section h4 {
+    font-size: 1.1rem;
+    color: #f54896;
+}
+
+.package_card {
+    height: 150px;
+    width: 100%;
+    background-color: #fff;
+    border: #f54896;
+}
+
+.package_image_container {
+    width: 100px;
+}
+
+.package_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px 0 0 3px;
+}
+
+.package_info_price {
+    height: 2rem;
+}
+
+.package_info h4 {
+    font-size: 11px;
+}
+
+.package_info h5 {
+    font-size: 12px;
+}
+
+.package_info h6 {
+    font-size: 10px;
+    color: rgba(128, 128, 128, 0.596);
+}
+
+.package_info button {
+    font-size: 10px;
+    background-color: #fff;
+    border-color: rgba(155, 149, 149, 0.521);
+    /* margin-left: 5rem; */
+}
+
+.package_info button:hover {
+    color: #fff;
+    background-color: #f54896;
+}
+
+.package_info p {
+    font-size: 9px;
+}
+
+.viewMore {
+    margin: 10px 0;
+    font-size: 13px;
+    border: hidden;
+}
+
+.viewMore:hover {
+    color: #f54896;
+}
+
+/* 
+
+
+
+
+TESTIMONIALS */
+
+#testimonials {
+    margin-bottom: 100px;
+}
+
+#testimonials h3 {
+    padding-top: 50px;
+}
+
+#testimonials div {
+    border-color: #f54896a4;
+}
+
+.carousel_slide {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+}
+
+.card_body h5 {
+    color: #f54896;
+}
+
+.card_body h6 {
+    font-size: 12px;
+}
+
+.card_body p {
+    font-size: 12px;
+    color: gray;
+}
+
+.testimonial_carousel_button {
+    width: 3rem;
+}
+/* 
+
+
+
+
+
+FOOTER */
+
+.newslettr_button {
+    background-color: #f54896;
+}
