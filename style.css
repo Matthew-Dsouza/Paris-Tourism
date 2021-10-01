@@ -100,6 +100,30 @@ HERO */
 .hero_card_body p {
     font-size: 13px;
     margin: 1.1rem 0;
+    color: #fff;
+}
+
+.underline_small {
+    display: inline-block;
+    position: relative;
+}
+
+.underline_small::after {
+    content: "";
+    height: 2px;
+    width: 70%;
+    background: #fff;
+    position: absolute;
+    left: calc(25% - 10%);
+    bottom: -5px;
+}
+
+.social_icon {
+    transition: font-size 0.8s;
+}
+
+.social_icon:hover {
+    font-size: 30px;
 }
 /* 
 
@@ -121,6 +145,14 @@ EXPLORE */
 .subsection_images_container {
     width: 100%;
     padding: 40px;
+}
+
+.row1 {
+    width: 60%;
+}
+
+.row2 {
+    width: 90%;
 }
 
 .row1_image1 {
@@ -198,6 +230,12 @@ PRICING */
     width: 100%;
     background-color: #fff;
     border: #f54896;
+}
+
+.package_card:hover{
+    transform: scale(1.1);
+    transition-timing-function: ease-in;
+    transition-delay: 0.5;
 }
 
 .package_image_container {

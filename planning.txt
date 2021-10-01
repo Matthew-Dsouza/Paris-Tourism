@@ -1,0 +1,5 @@
+5 pages
+-> explore (discover.html)
+-> shopping (shopping.html)
+-> eating out (dining.html)
+-> practical paris (practical.html)
