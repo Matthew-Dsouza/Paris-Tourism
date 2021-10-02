@@ -119,11 +119,12 @@ HERO */
 }
 
 .social_icon {
+    font-size: 20px;
     transition: font-size 0.8s;
 }
 
 .social_icon:hover {
-    font-size: 30px;
+    color: #aaa8a9;
 }
 /* 
 
@@ -339,6 +340,9 @@ TESTIMONIALS */
 
 
 FOOTER */
+.footer_link{
+    font-size: 12px;
+}
 
 .newslettr_button {
     background-color: #f54896;
