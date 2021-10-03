@@ -26,6 +26,80 @@
 </head>
 
 <body>
+  <!-- registration modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Registration Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!--  -->
+        <div class="modal-body d-flex flex-wrap align-items-center">
+          <!--  -->
+          <div class="container m-2">
+
+            <!--  -->
+
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Absolutely unnecessary</h6>
+                <form action="./connect.php" method="post">
+                  <div class="mb-3">
+                    <!--  -->
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" aria-describedby="firstName"
+                      name="firstName">
+                  </div>
+                  <!--  -->
+                  <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" aria-describedby="lastName" name="lastName">
+                  </div>
+                  <!--  -->
+                  <h6 class="card-subtitle mb-2 text-muted">Necessary</h6>
+                  <div class="mb-3">
+                    <label for="userEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp"
+                      name="userEmail">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <!--  -->
+                  <div class="mb-3">
+                    <label for="userPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="userPassword" name="userPassword">
+                  </div>
+                  <!--  -->
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="userConsent" name="userConsent" required>
+                    <label class="form-check-label" for="userConsent"></label>I agree to the term & conditions.</label>
+                  </div>
+                  <button type="submit" class="btn btn-dark">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        <!--  -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 
+
+
+    
+
+
+
+
+
+
+
+     -->
+
   <!-- navbar  -->
   <nav class="navbar" id="header">
     <div class="website_brand">
@@ -40,12 +114,8 @@
       <a href="./shopping.html" class="nav_link">Shopping</a>
       <a href="./dining.html" class="nav_link">Dining</a>
       <a href="./whereToStay.html" class="nav_link">Accommodations</a>
-      <button
-        type="button"
-        class="contact_button btn-dark"
-        onclick="window.location.href = 'index.html#footer';"
-      >
-        <strong>Sign in</strong>
+      <button type="button" class="contact_button btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <strong>Register</strong>
       </button>
     </div>
   </nav>
@@ -103,7 +173,7 @@
         <!-- section#2 -->
         <div class="d-flex flex-wrap gap-4 justify-content-evenly my-5">
           <!-- card#1 -->
-          <div class="card" style="width: 16rem">
+          <div class="card section_info_cards" style="width: 16rem">
             <img
               src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/liste_sub_rubric/media/1.-photos/04.-restauration-630-x-405/restaurant-le-train-bleu-gare-de-lyon-630x405-c-otcp-amelie-dupont-i-120-18/2695-4-fre-FR/Restaurant-Le-Train-Bleu-Gare-de-Lyon-630x405-C-OTCP-Amelie-Dupont-I-120-18.jpg"
               class="card-img-top" alt="..." />
@@ -116,7 +186,7 @@
           </div>
 
           <!-- card#2 -->
-          <div class="card" style="width: 16rem">
+          <div class="card section_info_cards" style="width: 16rem">
             <img
               src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/liste_sub_rubric/media/1.-photos/04.-restauration-630-x-405/brasserie-le-vaudeville-630x405-c-otcp-marc-bertrand-i-140-49/24386-1-fre-FR/Brasserie-le-Vaudeville-630x405-C-OTCP-Marc-Bertrand-I-140-49.jpg"
               class="card-img-top" alt="..." />
@@ -129,7 +199,7 @@
           </div>
 
           <!-- card#3 -->
-          <div class="card" style="width: 16rem">
+          <div class="card section_info_cards" style="width: 16rem">
             <img
               src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/liste_sub_rubric/media/1.-photos/04.-restauration-630-x-405/le-tse-restaurant-630x405-c-dr/5009440-1-fre-FR/Le-Tse-restaurant-630x405-C-DR.jpg"
               class="card-img-top" alt="..." />
@@ -142,7 +212,7 @@
           </div>
 
           <!-- card#4 -->
-          <div class="card" style="width: 16rem">
+          <div class="card section_info_cards" style="width: 16rem">
             <img
               src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/liste_sub_rubric/media/1.-photos/04.-restauration-630-x-405/restaurant-le-mesturet-paris-630x405-c-dr2/5009503-1-fre-FR/Restaurant-Le-Mesturet-Paris-630x405-C-DR.jpg"
               class="card-img-top" alt="..." />
@@ -173,7 +243,7 @@
               <div class="carousel-item active">
 
               <div class="d-flex flex-row justify-content-around">
-                <div class="card" style="width: 20rem;">
+                <div class="card section_info_cards" style="width: 20rem;">
                   <img
                     src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/homepage_encemoment/node_43/node_51/node_77884/node_77887/chez-savy-salle-mosa%C3%AFques-%7C-630x405-%7C-%C2%A9-otcp/16946432-1-fre-FR/Chez-Savy-Salle-mosa%C3%AFques-%7C-630x405-%7C-%C2%A9-OTCP.jpg"
                     class="d-block w-100" alt="...">
@@ -182,7 +252,7 @@
                   </div>
                 </div>
                 
-                <div class="card" style="width: 20rem;">
+                <div class="card section_info_cards" style="width: 20rem;">
                   <img
                     src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/homepage_encemoment/node_43/node_51/node_77884/node_77887/bib-guss-d%C3%A9co-%7C-630x405-%7C-%C2%A9-m.pawlak/19094678-1-fre-FR/Bib-Guss-D%C3%A9co-%7C-630x405-%7C-%C2%A9-M.Pawlak.jpg"
                     class="d-block w-100" alt="...">
@@ -191,7 +261,7 @@
                   </div>
                 </div>
 
-                <div class="card" style="width: 20rem;">
+                <div class="card section_info_cards" style="width: 20rem;">
                   <img
                     src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/homepage_encemoment/node_43/node_51/node_77884/node_77887/babette-massy-restaurant-%7C-630x405-%7C-%C2%A9-yvan-moreau/22047049-1-fre-FR/Babette-Massy-Restaurant-%7C-630x405-%7C-%C2%A9-Yvan-Moreau.jpg"
                     class="d-block w-100" alt="...">
@@ -207,21 +277,21 @@
 
               <div class="carousel-item">
                 <div class="d-flex flex-row justify-content-around">
-                  <div class="card" style="width: 20rem;">
+                  <div class="card section_info_cards" style="width: 20rem;">
                     <img src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/search_result/media/1.-photos/04.-restauration-630-x-405/patisserie-angelina-630x405-c-otcp-marc-bertrand-i-160-23/2690-3-fre-FR/Patisserie-Angelina-630x405-C-OTCP-Marc-Bertrand-I-160-23.jpg" class="d-block w-100" alt="...">
                     <div class="card-body">
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                   </div>
                   
-                  <div class="card" style="width: 20rem;">
+                  <div class="card section_info_cards" style="width: 20rem;">
                     <img src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/search_result/node_43/node_51/node_77884/node_77887/gordon-ramsay-au-trianon-palace-de-versailles-loggia-%7C-630x405-%7C-%C2%A9-dr-waldorf-astoria-versailles-trianon-palace/12547842-9-fre-FR/Gordon-Ramsay-au-Trianon-Palace-de-Versailles-Loggia-%7C-630x405-%7C-%C2%A9-DR-Waldorf-Astoria-Versailles-Trianon-Palace.jpg" />
                     <div class="card-body">
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                   </div>
   
-                  <div class="card" style="width: 20rem;">
+                  <div class="card section_info_cards" style="width: 20rem;">
                     <img src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/search_result/node_43/node_51/node_77884/node_77887/le-bar-8-bar-%7C-630x405-%7C-%C2%A9-george-apostolidis/22005980-1-fre-FR/Le-Bar-8-Bar-%7C-630x405-%7C-%C2%A9-George-Apostolidis.jpg" class="d-block w-100" alt="...">
                     <div class="card-body">
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -235,21 +305,21 @@
 
               <div class="carousel-item">
                 <div class="d-flex flex-row justify-content-around">
-                  <div class="card" style="width: 20rem;">
+                  <div class="card section_info_cards" style="width: 20rem;">
                     <img src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/search_result/node_43/node_51/node_77884/node_77887/california-bliss-frozen-yogurt-fraise-%7C-630x405-%7C-%C2%A9-sylvie-fatien-@-sr.-regard/21489535-1-fre-FR/California-Bliss-Frozen-Yogurt-fraise-%7C-630x405-%7C-%C2%A9-Sylvie-FATIEN-@-SR.-REGARD.jpg" class="d-block w-100" alt="...">
                     <div class="card-body">
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                   </div>
                   
-                  <div class="card" style="width: 20rem;">
+                  <div class="card section_info_cards" style="width: 20rem;">
                     <img src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/liste_sub_rubric/media/1.-photos/01.-ambiance-630-x-405/louis-vuitton-facade-630x405-c-otcp-stephanie-rivoal/28666-1-fre-FR/Louis-Vuitton-facade-630x405-C-OTCP-Stephanie-Rivoal.jpg" class="d-block w-100" alt="...">
                     <div class="card-body">
                       <p class="card-text">When fashion boutiques become works of art in their own righ...</p>
                     </div>
                   </div>
   
-                  <div class="card" style="width: 20rem;">
+                  <div class="card section_info_cards" style="width: 20rem;">
                     <img src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/homepage_encemoment/node_43/node_51/node_77884/node_79219/promenade-des-sens-balade-gourmande-paris-%7C-630x405-%7C-%C2%A9-promenade-des-sens/21186535-1-fre-FR/Promenade-des-Sens-Balade-gourmande-Paris-%7C-630x405-%7C-%C2%A9-Promenade-des-Sens.jpg" class="d-block w-100" alt="...">
                     <div class="card-body">
                       <p class="card-text">Enjoy these gourmet and historical walks around Paris with a series fun and informative tours designed by Marie-Bénédicte Pollet...</p>

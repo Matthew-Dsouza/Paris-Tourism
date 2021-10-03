@@ -26,27 +26,101 @@
 </head>
 
 <body>
-    <!-- navbar  -->
-    <nav class="navbar" id="header">
-        <div class="website_brand">
-            <a href="./index.html">
-                <img src="./logo.jpg" alt="" class="website_brand_logo" />
-            </a>
+    <!-- registration modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Registration Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <!--  -->
+        <div class="modal-body d-flex flex-wrap align-items-center">
+          <!--  -->
+          <div class="container m-2">
 
-        <div class="nav_items">
-            <a href="./index.html" class="nav_link">Home</a>
-            <a href="./discover.html" class="nav_link">Discover</a>
-            <a href="./shopping.html" class="nav_link">Shopping</a>
-            <a href="./dining.html" class="nav_link">Dining</a>
-            <a href="./whereToStay.html" class="nav_link">Accommodations</a>
-            <button type="button" class="contact_button btn-dark" onclick="window.location.href = 'index.html#footer';">
-                <strong>Sign in</strong>
-            </button>
+            <!--  -->
+
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Absolutely unnecessary</h6>
+                <form action="./connect.php" method="post">
+                  <div class="mb-3">
+                    <!--  -->
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" aria-describedby="firstName"
+                      name="firstName">
+                  </div>
+                  <!--  -->
+                  <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" aria-describedby="lastName" name="lastName">
+                  </div>
+                  <!--  -->
+                  <h6 class="card-subtitle mb-2 text-muted">Necessary</h6>
+                  <div class="mb-3">
+                    <label for="userEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp"
+                      name="userEmail">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <!--  -->
+                  <div class="mb-3">
+                    <label for="userPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="userPassword" name="userPassword">
+                  </div>
+                  <!--  -->
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="userConsent" name="userConsent" required>
+                    <label class="form-check-label" for="userConsent"></label>I agree to the term & conditions.</label>
+                  </div>
+                  <button type="submit" class="btn btn-dark">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--  -->
         </div>
-    </nav>
+        <!--  -->
+      </div>
+    </div>
+  </div>
 
-    <!-- 
+  <!-- 
+
+
+    
+
+
+
+
+
+
+
+     -->
+
+  <!-- navbar  -->
+  <nav class="navbar" id="header">
+    <div class="website_brand">
+      <a href="./index.html">
+        <img src="./logo.jpg" alt="" class="website_brand_logo" />
+      </a>
+    </div>
+
+    <div class="nav_items">
+      <a href="./index.html" class="nav_link">Home</a>
+      <a href="./discover.html" class="nav_link">Discover</a>
+      <a href="./shopping.html" class="nav_link">Shopping</a>
+      <a href="./dining.html" class="nav_link">Dining</a>
+      <a href="./whereToStay.html" class="nav_link">Accommodations</a>
+      <button type="button" class="contact_button btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <strong>Register</strong>
+      </button>
+    </div>
+  </nav>
+
+  <!-- 
 
 
     
@@ -99,7 +173,7 @@
                 <!-- section#2 -->
                 <div class="d-flex flex-wrap gap-4 justify-content-evenly my-5">
                     <!-- card#1 -->
-                    <div class="card" style="width: 16rem">
+                    <div class="card section_info_cards" style="width: 16rem">
                         <img src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/liste_sub_rubric/node_43/node_51/node_234/vignette-de-dossier-palaces-parisiens-630x405/161617-4-fre-FR/Vignette-de-dossier-Palaces-parisiens-630x405.jpg"
                             class="card-img-top" alt="..." />
                         <div class="card-body">
@@ -111,7 +185,7 @@
                     </div>
 
                     <!-- card#2 -->
-                    <div class="card" style="width: 16rem">
+                    <div class="card section_info_cards" style="width: 16rem">
                         <img src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/liste_sub_rubric/media/1.-photos/03.-hebergement-630-x-405/platine-hotel-chambre-hollywood-630x405-c-jimmy-delpire/39296-1-fre-FR/Platine-Hotel-chambre-Hollywood-630x405-C-Jimmy-Delpire.jpg"
                             class="card-img-top" alt="..." />
                         <div class="card-body">
@@ -123,7 +197,7 @@
                     </div>
 
                     <!-- card#3 -->
-                    <div class="card" style="width: 16rem">
+                    <div class="card section_info_cards" style="width: 16rem">
                         <img src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/liste_sub_rubric/media/1.-photos/03.-hebergement-630-x-405/tente-de-camping-couple-630x405-c-thinkstock/31429-1-fre-FR/Tente-de-camping-couple-630x405-C-Thinkstock.jpg"
                             class="card-img-top" alt="..." />
                         <div class="card-body">
@@ -135,7 +209,7 @@
                     </div>
 
                     <!-- card#4 -->
-                    <div class="card" style="width: 16rem">
+                    <div class="card section_info_cards" style="width: 16rem">
                         <img src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/liste_sub_rubric/media/1.-photos/03.-hebergement-630-x-405/appartement-meuble-630x405-c-thinkstock/31363-1-fre-FR/Appartement-meuble-630x405-C-Thinkstock.jpg"
                             class="card-img-top" alt="..." />
                         <div class="card-body">
@@ -147,7 +221,7 @@
                     </div>
 
                     <!-- card#5 -->
-                    <div class="card" style="width: 16rem">
+                    <div class="card section_info_cards" style="width: 16rem">
                         <img src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/liste_sub_rubric/node_43/node_51/node_234/vignette-de-dossier-palaces-parisiens-630x405/161617-4-fre-FR/Vignette-de-dossier-Palaces-parisiens-630x405.jpg"
                             class="card-img-top" alt="..." />
                         <div class="card-body">
@@ -159,7 +233,7 @@
                     </div>
 
                     <!-- card#6 -->
-                    <div class="card" style="width: 16rem">
+                    <div class="card section_info_cards" style="width: 16rem">
                         <img src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/liste_sub_rubric/media/1.-photos/03.-hebergement-630-x-405/platine-hotel-chambre-hollywood-630x405-c-jimmy-delpire/39296-1-fre-FR/Platine-Hotel-chambre-Hollywood-630x405-C-Jimmy-Delpire.jpg"
                             class="card-img-top" alt="..." />
                         <div class="card-body">
@@ -171,7 +245,7 @@
                     </div>
 
                     <!-- card#7 -->
-                    <div class="card" style="width: 16rem">
+                    <div class="card section_info_cards" style="width: 16rem">
                         <img src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/liste_sub_rubric/media/1.-photos/03.-hebergement-630-x-405/tente-de-camping-couple-630x405-c-thinkstock/31429-1-fre-FR/Tente-de-camping-couple-630x405-C-Thinkstock.jpg"
                             class="card-img-top" alt="..." />
                         <div class="card-body">
@@ -183,7 +257,7 @@
                     </div>
 
                     <!-- card#8 -->
-                    <div class="card" style="width: 16rem">
+                    <div class="card section_info_cards" style="width: 16rem">
                         <img src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/liste_sub_rubric/media/1.-photos/03.-hebergement-630-x-405/appartement-meuble-630x405-c-thinkstock/31363-1-fre-FR/Appartement-meuble-630x405-C-Thinkstock.jpg"
                             class="card-img-top" alt="..." />
                         <div class="card-body">

@@ -1,55 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paris!</title>
 
-    <!-- fontawesome js  -->
-    <script
-      src="https://kit.fontawesome.com/6b73a2edf3.js"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paris!</title>
 
-    <!-- bootstrap css -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
+  <!-- fontawesome js  -->
+  <script src="https://kit.fontawesome.com/6b73a2edf3.js" crossorigin="anonymous"></script>
 
-    <!-- my css -->
-    <link rel="stylesheet" href="./style.css" />
-  </head>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
 
-  <body>
-    <!-- navbar  -->
-    <nav class="navbar" id="header">
-      <div class="website_brand">
-        <a href="./index.html">
-          <img src="./logo.jpg" alt="" class="website_brand_logo" />
-        </a>
+  <!-- my css -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- registration modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Registration Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!--  -->
+        <div class="modal-body d-flex flex-wrap align-items-center">
+          <!--  -->
+          <div class="container m-2">
+
+            <!--  -->
+
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Absolutely unnecessary</h6>
+                <form action="./connect.php" method="post">
+                  <div class="mb-3">
+                    <!--  -->
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" aria-describedby="firstName"
+                      name="firstName">
+                  </div>
+                  <!--  -->
+                  <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" aria-describedby="lastName" name="lastName">
+                  </div>
+                  <!--  -->
+                  <h6 class="card-subtitle mb-2 text-muted">Necessary</h6>
+                  <div class="mb-3">
+                    <label for="userEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp"
+                      name="userEmail">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <!--  -->
+                  <div class="mb-3">
+                    <label for="userPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="userPassword" name="userPassword">
+                  </div>
+                  <!--  -->
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="userConsent" name="userConsent" required>
+                    <label class="form-check-label" for="userConsent"></label>I agree to the term & conditions.</label>
+                  </div>
+                  <button type="submit" class="btn btn-dark">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        <!--  -->
       </div>
+    </div>
+  </div>
 
-      <div class="nav_items">
-        <a href="./index.html" class="nav_link">Home</a>
-        <a href="./discover.html" class="nav_link">Discover</a>
-        <a href="./shopping.html" class="nav_link">Shopping</a>
-        <a href="./dining.html" class="nav_link">Dining</a>
-        <a href="./whereToStay.html" class="nav_link">Accommodations</a>
-        <button
-          type="button"
-          class="contact_button btn-dark"
-          onclick="window.location.href = 'index.html#footer';"
-        >
-          <strong>Sign in</strong>
-        </button>
-      </div>
-    </nav>
-
-    <!-- 
+  <!-- 
 
 
     
@@ -62,33 +93,65 @@
 
      -->
 
-    <!-- hero -->
-    <div class="container mt-4">
-      <section class="hero d-flex justify-content-evenly mt-4">
-        <div class="hero_info w-50">
-          <h4>AWARD WINNING TRAVEL AGENCY</h4>
-          <h1>
-            
-          </h1>
+  <!-- navbar  -->
+  <nav class="navbar" id="header">
+    <div class="website_brand">
+      <a href="./index.html">
+        <img src="./logo.jpg" alt="" class="website_brand_logo" />
+      </a>
+    </div>
 
-          <p class="my-3">
-            The team here at Paris Tourism specialises in making the client's vacation as memorable as possible.
-            <br>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, laboriosam!
-          </p>
+    <div class="nav_items">
+      <a href="./index.html" class="nav_link">Home</a>
+      <a href="./discover.html" class="nav_link">Discover</a>
+      <a href="./shopping.html" class="nav_link">Shopping</a>
+      <a href="./dining.html" class="nav_link">Dining</a>
+      <a href="./whereToStay.html" class="nav_link">Accommodations</a>
+      <button type="button" class="contact_button btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <strong>Register</strong>
+      </button>
+    </div>
+  </nav>
 
-          <div class="hero_extra_info d-flex gap-4">
-            <div class="fw-bolder">
-              <i class="fas fa-couch"></i> 400+ Projects Done
-            </div>
-            <div class="fw-bolder">
-              <i class="fas fa-user"></i> 100+ Happy Clients
-            </div>
+  <!-- 
+
+
+    
+
+
+
+
+
+
+
+     -->
+
+  <!-- hero -->
+  <div class="container mt-4">
+    <section class="hero d-flex justify-content-evenly mt-4">
+      <div class="hero_info w-50">
+        <h4>AWARD WINNING TRAVEL AGENCY</h4>
+        <h1>
+
+        </h1>
+
+        <p class="my-3">
+          The team here at Paris Tourism specialises in making the client's vacation as memorable as possible.
+          <br>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, pariatur. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Sequi, laboriosam!
+        </p>
+
+        <div class="hero_extra_info d-flex gap-4">
+          <div class="fw-bolder">
+            <i class="fas fa-couch"></i> 400+ Projects Done
           </div>
+          <div class="fw-bolder">
+            <i class="fas fa-user"></i> 100+ Happy Clients
+          </div>
+        </div>
 
-          <button
-            type="button"
-            class="
+        <button type="button" class="
               btn btn-dark
               text-black
               my-3
@@ -100,50 +163,39 @@
               border-2
               rounded-pill
               bg-white
-            "
-          >
-            <span class="">Read More</span>
-            <i class="fas fa-chevron-right"></i>
-          </button>
-        </div>
+            ">
+          <span class="">Read More</span>
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
 
-        <div class="hero_card_container">
-          <div class="card hero_card" style="width: 18rem">
-            <img
-              src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-              class="hero_card_image"
-              alt=""
-            />
+      <div class="hero_card_container">
+        <div class="card hero_card" style="width: 18rem">
+          <img
+            src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+            class="hero_card_image" alt="" />
 
-            <div class="card-body hero_card_body text-white">
-              <h2 class="fs-4 underline_small">Parisian Dream</h2>
-              <p>
-                A Parisian nightlife experience is second to none! From posh to
-                historical, and everything in between, Paris promises clubs,
-                cabarets and all-night parties and so much more...
-              </p>
+          <div class="card-body hero_card_body text-white">
+            <h2 class="fs-4 underline_small">Parisian Dream</h2>
+            <p>
+              A Parisian nightlife experience is second to none! From posh to
+              historical, and everything in between, Paris promises clubs,
+              cabarets and all-night parties and so much more...
+            </p>
 
-              <div class="social_media_handles d-flex gap-3">
-                <a href="#" class="text-white"
-                  ><i class="social_icon fab fa-twitter"></i
-                ></a>
-                <a href="#" class="text-white"
-                  ><i class="social_icon fab fa-facebook"></i
-                ></a>
-                <a href="#" class="text-white"
-                  ><i class="social_icon fab fa-instagram"></i
-                ></a>
-                <a href="#" class="text-white"
-                  ><i class="social_icon fab fa-linkedin"></i
-                ></a>
-              </div>
+            <div class="social_media_handles d-flex gap-3">
+              <a href="#" class="text-white"><i class="social_icon fab fa-twitter"></i></a>
+              <a href="#" class="text-white"><i class="social_icon fab fa-facebook"></i></a>
+              <a href="#" class="text-white"><i class="social_icon fab fa-instagram"></i></a>
+              <a href="#" class="text-white"><i class="social_icon fab fa-linkedin"></i></a>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+  </div>
 
-    <!-- 
+  <!-- 
 
 
 
@@ -155,53 +207,560 @@
 
      -->
 
-    <!-- explore -->
-    <section class="sub_section position-relative" id="explore">
-      <div
-        class="
+  <!-- explore -->
+  <section class="sub_section position-relative" id="explore">
+    <div class="
           subsection_images_container
           d-flex
           flex-column
           gap-4
           align-items-start
-        "
-      >
-        <div class="row1 d-flex gap-3 align-items-end">
-          <div class="row1_image1">
-            <img
-              src="https://images.unsplash.com/photo-1471623432079-b009d30b6729?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGFyaXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-              alt=""
-              class="image1"
-            />
-          </div>
-          <div class="row1_image2">
-            <img
-              src="https://images.unsplash.com/photo-1500039436846-25ae2f11882e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBhcmlzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-              alt=""
-              class="image2"
-            />
+        ">
+      <div class="row1 d-flex gap-3 align-items-end">
+        <div class="row1_image1">
+          <img
+            src="https://images.unsplash.com/photo-1471623432079-b009d30b6729?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGFyaXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+            alt="" class="image1" />
+        </div>
+        <div class="row1_image2">
+          <img
+            src="https://images.unsplash.com/photo-1500039436846-25ae2f11882e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBhcmlzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+            alt="" class="image2" />
+        </div>
+      </div>
+
+      <div class="row2 d-flex align-items-start gap-3">
+        <div class="row2_image1">
+          <img src="https://images.unsplash.com/photo-1585944285854-d06c019aaca3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fHBhcmlzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60
+            alt="" class=" image1">
+        </div>
+        <div class="row2_image2">
+          <img
+            src="https://images.unsplash.com/photo-1486247496048-cc4ed929f7cc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fHBhcmlzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+            alt="" class="image2" />
+        </div>
+        <div class="row2_image3">
+          <img
+            src="https://images.unsplash.com/photo-1504896287989-ff1fbde00199?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBhcmlzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+            alt="" class="image3" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+
+
+
+
+
+
+
+
+
+
+     -->
+
+  <div class="container">
+    <!-- pricing  -->
+    <section class="">
+      <h3 class="text-center pt-3" id="pricing">Voyage à Parisien</h3>
+      <h6 class="text-center mb-3">Plan Your Next Travel To Paris</h6>
+
+      <div class="pricing_container d-flex justify-content-evenly">
+        <div>
+          <!-- holiday packages  -->
+          <div class="packages_section p-3 d-flex flex-column align-items-center">
+            <h4 class="mb-3 section_heading text-center" style="color: rgb(99, 97, 97)">
+              Holiday Packages In Paris
+            </h4>
+
+            <!-- package cards -->
+            <div class="d-flex flex-column gap-3">
+              <!-- package 1  -->
+              <div class="package_card d-flex rounded-1">
+                <div class="package_image_container">
+                  <img
+                    src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Magnum_w_140_h_140_c_fill_g_auto_q_auto:good_f_jpg/v1470894014/Brussels_Best_Time2.jpg"
+                    alt="" class="package_image" />
+                </div>
+
+                <div class="package_info m-2">
+                  <h5 class="fw-normal">Explore Netherland & Belgium</h5>
+                  <h6 class="">9 Nights, 10 Days</h6>
+                  <hr />
+                  <div class="
+                        d-flex
+                        flex-row
+                        gap-4
+                        package_info_price
+                        position-relative
+                        align-items-center
+                      ">
+                    <div class="">
+                      <h6 class="">Starting From</h6>
+                      <h4 class="fw-normal">&#8377;92,000</h4>
+                    </div>
+                    <button class="fw-normal fw-light border-1 px-2 py-1 rounded">
+                      View Details
+                    </button>
+                  </div>
+                  <p class="text-muted mt-2">Per Person on twin sharing</p>
+                </div>
+              </div>
+              <!-- package 2 -->
+              <div class="package_card d-flex rounded-1 mb-3">
+                <div class="package_image_container">
+                  <img
+                    src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_380_h_270_c_fill_g_auto_q_auto:good_f_jpg/v1444998622/London.jpg"
+                    alt="" class="package_image" />
+                </div>
+
+                <div class="package_info m-2">
+                  <h5 class="fw-normal">Best of London & Paris</h5>
+                  <h6 class="">5 Nights, 6 Days</h6>
+                  <hr />
+                  <div class="
+                        d-flex
+                        flex-row
+                        gap-4
+                        package_info_price
+                        position-relative
+                        align-items-center
+                      ">
+                    <div class="">
+                      <h6 class="">Starting From</h6>
+                      <h4 class="fw-normal">&#8377;76,720</h4>
+                    </div>
+                    <button class="fw-normal fw-light border-1 px-2 py-1 rounded">
+                      View Details
+                    </button>
+                  </div>
+                  <p class="text-muted mt-2">Per Person on twin sharing</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="toggledPackagesCards">
+              <!-- package 3  -->
+              <div class="package_card d-flex rounded-1 mb-3">
+                <div class="package_image_container">
+                  <img
+                    src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_380_h_270_c_fill_g_auto_q_auto:good_f_jpg/v1470718273/Rome_Transport.jpg"
+                    alt="" class="package_image" />
+                </div>
+
+                <div class="package_info m-2">
+                  <h5 class="fw-normal">Explore France, Swiss & Italy</h5>
+                  <h6 class="">10 Nights, 11 Days</h6>
+                  <hr />
+                  <div class="
+                        d-flex
+                        flex-row
+                        gap-4
+                        package_info_price
+                        position-relative
+                        align-items-center
+                      ">
+                    <div class="">
+                      <h6 class="">Starting From</h6>
+                      <h4 class="fw-normal">&#8377;92,000</h4>
+                    </div>
+                    <button class="fw-normal fw-light border-1 px-2 py-1 rounded">
+                      View Details
+                    </button>
+                  </div>
+                  <p class="text-muted mt-2">Per Person on twin sharing</p>
+                </div>
+              </div>
+              <!-- package 4  -->
+              <div class="package_card d-flex rounded-1 mb-3">
+                <div class="package_image_container">
+                  <img
+                    src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_379_h_204_c_fill_g_auto_q_auto:good_f_jpg/v1472197893/Varkala_Map.jpg"
+                    alt="" class="package_image" />
+                </div>
+
+                <div class="package_info m-2">
+                  <h5 class="fw-normal">Europe in a Nutshell</h5>
+                  <h6 class="">10 Nights, 11 Days</h6>
+                  <hr />
+                  <div class="
+                        d-flex
+                        flex-row
+                        gap-4
+                        package_info_price
+                        position-relative
+                        align-items-center
+                      ">
+                    <div class="">
+                      <h6 class="">Starting From</h6>
+                      <h4 class="fw-normal">&#8377;81,990</h4>
+                    </div>
+                    <button class="fw-normal fw-light border-1 px-2 py-1 rounded">
+                      View Details
+                    </button>
+                  </div>
+                  <p class="text-muted mt-2">Per Person on twin sharing</p>
+                </div>
+              </div>
+              <!-- package 5  -->
+              <div class="package_card d-flex rounded-1 mb-3">
+                <div class="package_image_container">
+                  <img
+                    src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_380_h_270_c_fill_g_auto_q_auto:good_f_jpg/v1436877368/Amsterdam_s_Canals_7.jpg"
+                    alt="" class="package_image" />
+                </div>
+
+                <div class="package_info m-2">
+                  <h5 class="fw-normal">European Delight</h5>
+                  <h6 class="">6 Nights, 7 Days</h6>
+                  <hr />
+                  <div class="
+                        d-flex
+                        flex-row
+                        gap-4
+                        package_info_price
+                        position-relative
+                        align-items-center
+                      ">
+                    <div class="">
+                      <h6 class="">Starting From</h6>
+                      <h4 class="fw-normal">&#8377;92,990</h4>
+                    </div>
+                    <button class="fw-normal fw-light border-1 px-2 py-1 rounded">
+                      View Details
+                    </button>
+                  </div>
+                  <p class="text-muted mt-2">Per Person on twin sharing</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="viewMore togglePackages">
+              View less packages
+            </button>
           </div>
         </div>
 
-        <div class="row2 d-flex align-items-start gap-3">
-          <div class="row2_image1">
-            <img
-            src="https://images.unsplash.com/photo-1585944285854-d06c019aaca3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fHBhcmlzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60
-            alt="" class=" image1">
+        <!-- ... -->
+
+        <div>
+          <!-- holiday themes  -->
+          <div class="packages_section p-3 d-flex align-items-center flex-column">
+            <h4 class="mb-3 section_heading text-center" style="color: rgb(99, 97, 97)">
+              Holiday Themes In Paris
+            </h4>
+
+            <!-- package cards -->
+            <div class="d-flex flex-column gap-3">
+              <!-- package 1  -->
+              <div class="package_card d-flex rounded-1">
+                <div class="package_image_container">
+                  <img
+                    src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Magnum_w_140_h_140_c_fill_g_auto_q_auto:good_f_jpg/v1499671941/Cathedral_of_Notre_dame_de_Paris.jpg"
+                    alt="" class="package_image" />
+                </div>
+
+                <div class="package_info m-2">
+                  <h5 class="fw-normal">Family Packages</h5>
+                  <h6 class="">6 Nights, 7 Days</h6>
+                  <hr />
+                  <div class="
+                        d-flex
+                        flex-row
+                        gap-4
+                        package_info_price
+                        position-relative
+                        align-items-center
+                      ">
+                    <div class="">
+                      <h6 class="">Starting From</h6>
+                      <h4 class="fw-normal">&#8377;69,990</h4>
+                    </div>
+                    <button class="fw-normal fw-light border-1 px-2 py-1 rounded">
+                      View Details
+                    </button>
+                  </div>
+                  <p class="text-muted mt-2">Per Person on twin sharing</p>
+                </div>
+              </div>
+              <!-- package 2 -->
+              <div class="package_card d-flex rounded-1 mb-3">
+                <div class="package_image_container">
+                  <img
+                    src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Magnum_w_140_h_140_c_fill_g_auto_q_auto:good_f_jpg/v1486638741/DO_NOT_USE_DISCOVER_INDIA_EDITORIAL/Kiss_at_Paris.jpg"
+                    alt="" class="package_image" />
+                </div>
+
+                <div class="package_info m-2">
+                  <h5 class="fw-normal">Honeymoon Packages</h5>
+                  <h6 class="">7 Nights, 8 Days</h6>
+                  <hr />
+                  <div class="
+                        d-flex
+                        flex-row
+                        gap-4
+                        package_info_price
+                        position-relative
+                        align-items-center
+                      ">
+                    <div class="">
+                      <h6 class="">Starting From</h6>
+                      <h4 class="fw-normal">&#8377;1,05,000</h4>
+                    </div>
+                    <button class="fw-normal fw-light border-1 px-2 py-1 rounded">
+                      View Details
+                    </button>
+                  </div>
+                  <p class="text-muted mt-2">Per Person on twin sharing</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="toggledThemesCards">
+              <!-- package 3  -->
+              <div class="package_card d-flex rounded-1 mb-3">
+                <div class="package_image_container">
+                  <img
+                    src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_400_h_180_c_fill_g_auto_q_auto:good_f_jpg/v1466059731/General_Holiday_Beach.jpg"
+                    alt="" class="package_image" />
+                </div>
+
+                <div class="package_info m-2">
+                  <h5 class="fw-normal">Beach Tour Packages</h5>
+                  <h6 class="">10 Nights, 11 Days</h6>
+                  <hr />
+                  <div class="
+                        d-flex
+                        flex-row
+                        gap-4
+                        package_info_price
+                        position-relative
+                        align-items-center
+                      ">
+                    <div class="">
+                      <h6 class="">Starting From</h6>
+                      <h4 class="fw-normal">&#8377;1,20,000</h4>
+                    </div>
+                    <button class="fw-normal fw-light border-1 px-2 py-1 rounded">
+                      View Details
+                    </button>
+                  </div>
+                  <p class="text-muted mt-2">Per Person on twin sharing</p>
+                </div>
+              </div>
+              <!-- package 4  -->
+              <div class="package_card d-flex rounded-1 mb-3">
+                <div class="package_image_container">
+                  <img
+                    src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_400_h_180_c_fill_g_auto_q_auto:good_f_jpg/v1466059728/General_Holiday_Wildlife.jpg"
+                    alt="" class="package_image" />
+                </div>
+
+                <div class="package_info m-2">
+                  <h5 class="fw-normal">Wildlife Tour Packages</h5>
+                  <h6 class="">9 Nights, 10 Days</h6>
+                  <hr />
+                  <div class="
+                        d-flex
+                        flex-row
+                        gap-4
+                        package_info_price
+                        position-relative
+                        align-items-center
+                      ">
+                    <div class="">
+                      <h6 class="">Starting From</h6>
+                      <h4 class="fw-normal">&#8377;1,20,000</h4>
+                    </div>
+                    <button class="fw-normal fw-light border-1 px-2 py-1 rounded">
+                      View Details
+                    </button>
+                  </div>
+                  <p class="text-muted mt-2">Per Person on twin sharing</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="viewMore toggleThemes">View less themes</button>
           </div>
-          <div class="row2_image2">
-            <img
-              src="https://images.unsplash.com/photo-1486247496048-cc4ed929f7cc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fHBhcmlzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-              alt=""
-              class="image2"
-            />
-          </div>
-          <div class="row2_image3">
-            <img
-              src="https://images.unsplash.com/photo-1504896287989-ff1fbde00199?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBhcmlzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-              alt=""
-              class="image3"
-            />
+        </div>
+
+        <!-- ... -->
+
+        <div>
+          <!-- popular destinations  -->
+          <div class="packages_section p-3 d-flex flex-column align-items-center">
+            <h4 class="mb-3 section_heading text-center" style="color: rgb(99, 97, 97)">
+              Popular International Destinations
+            </h4>
+
+            <!-- package cards -->
+            <div class="d-flex flex-column gap-3">
+              <!-- package 1  -->
+              <div class="package_card d-flex rounded-1">
+                <div class="package_image_container">
+                  <img
+                    src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Magnum_w_140_h_140_c_fill_g_auto_q_auto:good_f_jpg/v4465945664/MarketPlaceHolidays/United%20Arab%20Emirates/Burj_Al_Arab_1__xU6t2Q.jpg"
+                    alt="" class="package_image" />
+                </div>
+
+                <div class="package_info m-2">
+                  <h5 class="fw-normal">Dubai</h5>
+                  <h6 class="">4 Nights, 5 Days</h6>
+                  <hr />
+                  <div class="
+                        d-flex
+                        flex-row
+                        gap-4
+                        package_info_price
+                        position-relative
+                        align-items-center
+                      ">
+                    <div class="">
+                      <h6 class="">Starting From</h6>
+                      <h4 class="fw-normal">&#8377;10,990</h4>
+                    </div>
+                    <button class="fw-normal fw-light border-1 px-2 py-1 rounded">
+                      View Details
+                    </button>
+                  </div>
+                  <p class="text-muted mt-2">Per Person on twin sharing</p>
+                </div>
+              </div>
+              <!-- package 2 -->
+              <div class="package_card d-flex rounded-1 mb-3">
+                <div class="package_image_container">
+                  <img
+                    src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Magnum_w_140_h_140_c_fill_g_auto_q_auto:good_f_jpg/v1484820432/Koh_hang.jpg"
+                    alt="" class="package_image" />
+                </div>
+
+                <div class="package_info m-2">
+                  <h5 class="fw-normal">Maldives</h5>
+                  <h6 class="">4 Nights, 5 Days</h6>
+                  <hr />
+                  <div class="
+                        d-flex
+                        flex-row
+                        gap-4
+                        package_info_price
+                        position-relative
+                        align-items-center
+                      ">
+                    <div class="">
+                      <h6 class="">Starting From</h6>
+                      <h4 class="fw-normal">&#8377;22,234</h4>
+                    </div>
+                    <button class="fw-normal fw-light border-1 px-2 py-1 rounded">
+                      View Details
+                    </button>
+                  </div>
+                  <p class="text-muted mt-2">Per Person on twin sharing</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="toggledDestinationCards">
+              <!-- package 3  -->
+              <div class="package_card d-flex rounded-1 mb-3">
+                <div class="package_image_container">
+                  <img
+                    src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Magnum_w_140_h_140_c_fill_g_auto_q_auto:good_f_jpg/v3181724529/MarketPlaceHolidays/Maldives/Filitheyo/MALDIVES7_2VimZ3.JPG"
+                    alt="" class="package_image" />
+                </div>
+
+                <div class="package_info m-2">
+                  <h5 class="fw-normal">Singapore</h5>
+                  <h6 class="">3 Nights, 4 Days</h6>
+                  <hr />
+                  <div class="
+                        d-flex
+                        flex-row
+                        gap-4
+                        package_info_price
+                        position-relative
+                        align-items-center
+                      ">
+                    <div class="">
+                      <h6 class="">Starting From</h6>
+                      <h4 class="fw-normal">&#8377;20,000</h4>
+                    </div>
+                    <button class="fw-normal fw-light border-1 px-2 py-1 rounded">
+                      View Details
+                    </button>
+                  </div>
+                  <p class="text-muted mt-2">Per Person on twin sharing</p>
+                </div>
+              </div>
+              <!-- package 4  -->
+              <div class="package_card d-flex rounded-1 mb-3">
+                <div class="package_image_container">
+                  <img
+                    src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_200_h_200_c_fill_g_auto_q_auto:good_f_jpg/v1468237101/Paris_1468237098.jpg"
+                    alt="" class="package_image" />
+                </div>
+
+                <div class="package_info m-2">
+                  <h5 class="fw-normal">Europe</h5>
+                  <h6 class="">4 Nights, 5 Days</h6>
+                  <hr />
+                  <div class="
+                        d-flex
+                        flex-row
+                        gap-4
+                        package_info_price
+                        position-relative
+                        align-items-center
+                      ">
+                    <div class="">
+                      <h6 class="">Starting From</h6>
+                      <h4 class="fw-normal">&#8377;27,990</h4>
+                    </div>
+                    <button class="fw-normal fw-light border-1 px-2 py-1 rounded">
+                      View Details
+                    </button>
+                  </div>
+                  <p class="text-muted mt-2">Per Person on twin sharing</p>
+                </div>
+              </div>
+              <!-- package 5  -->
+              <div class="package_card d-flex rounded-1 mb-3">
+                <div class="package_image_container">
+                  <img
+                    src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_200_h_200_c_fill_g_auto_q_auto:good_f_jpg/v1462770668/Bangkok-Wat_Arun.jpg"
+                    alt="" class="package_image" />
+                </div>
+
+                <div class="package_info m-2">
+                  <h5 class="fw-normal">Thailand</h5>
+                  <h6 class="">4 Nights, 5 Days</h6>
+                  <hr />
+                  <div class="
+                        d-flex
+                        flex-row
+                        gap-4
+                        package_info_price
+                        position-relative
+                        align-items-center
+                      ">
+                    <div class="">
+                      <h6 class="">Starting From</h6>
+                      <h4 class="fw-normal">&#8377;21,000</h4>
+                    </div>
+                    <button class="fw-normal fw-light border-1 px-2 py-1 rounded">
+                      View Details
+                    </button>
+                  </div>
+                  <p class="text-muted mt-2">Per Person on twin sharing</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="viewMore toggleDestinations">
+              View less destinations
+            </button>
           </div>
         </div>
       </div>
@@ -218,1062 +777,455 @@
 
 
 
-     -->
+       -->
 
-    <div class="container">
-      <!-- pricing  -->
-      <section class="">
-        <h3 class="text-center pt-3" id="pricing">Voyage à Parisien</h3>
-        <h6 class="text-center mb-3">Plan Your Next Travel To Paris</h6>
-
-        <div class="pricing_container d-flex justify-content-evenly">
-          <div>
-            <!-- holiday packages  -->
-            <div
-              class="packages_section p-3 d-flex flex-column align-items-center"
-            >
-              <h4
-                class="mb-3 section_heading text-center"
-                style="color: rgb(99, 97, 97)"
-              >
-                Holiday Packages In Paris
-              </h4>
-
-              <!-- package cards -->
-              <div class="d-flex flex-column gap-3">
-                <!-- package 1  -->
-                <div class="package_card d-flex rounded-1">
-                  <div class="package_image_container">
-                    <img
-                      src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Magnum_w_140_h_140_c_fill_g_auto_q_auto:good_f_jpg/v1470894014/Brussels_Best_Time2.jpg"
-                      alt=""
-                      class="package_image"
-                    />
-                  </div>
-
-                  <div class="package_info m-2">
-                    <h5 class="fw-normal">Explore Netherland & Belgium</h5>
-                    <h6 class="">9 Nights, 10 Days</h6>
-                    <hr />
-                    <div
-                      class="
-                        d-flex
-                        flex-row
-                        gap-4
-                        package_info_price
-                        position-relative
-                        align-items-center
-                      "
-                    >
-                      <div class="">
-                        <h6 class="">Starting From</h6>
-                        <h4 class="fw-normal">&#8377;92,000</h4>
-                      </div>
-                      <button
-                        class="fw-normal fw-light border-1 px-2 py-1 rounded"
-                      >
-                        View Details
-                      </button>
+    <!-- testimonials  -->
+    <section id="testimonials">
+      <h3 class="my-4 text-center">Testimonials</h3>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <!-- carousel slides  -->
+        <div class="carousel-inner">
+          <!-- slide 1  -->
+          <div class="carousel_slide carousel-item active">
+            <div class="
+                  testimonial_cards_container
+                  d-flex
+                  justify-content-evenly
+                ">
+              <!-- card 1 -->
+              <div class="card border-1 d-block" style="width: 14rem; height: 15rem">
+                <div class="card-body card_body">
+                  <div>
+                    <div class="card_image_container">
+                      <img
+                        src="https://images.unsplash.com/photo-1600469802026-4358d4e89df3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVubnl8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                        alt="dog wearing spectacles" class="rounded-circle">
                     </div>
-                    <p class="text-muted mt-2">Per Person on twin sharing</p>
+                    <h5 class="card-title fs-6">Elisha</h5>
                   </div>
-                </div>
-                <!-- package 2 -->
-                <div class="package_card d-flex rounded-1 mb-3">
-                  <div class="package_image_container">
-                    <img
-                      src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_380_h_270_c_fill_g_auto_q_auto:good_f_jpg/v1444998622/London.jpg"
-                      alt=""
-                      class="package_image"
-                    />
-                  </div>
-
-                  <div class="package_info m-2">
-                    <h5 class="fw-normal">Best of London & Paris</h5>
-                    <h6 class="">5 Nights, 6 Days</h6>
-                    <hr />
-                    <div
-                      class="
-                        d-flex
-                        flex-row
-                        gap-4
-                        package_info_price
-                        position-relative
-                        align-items-center
-                      "
-                    >
-                      <div class="">
-                        <h6 class="">Starting From</h6>
-                        <h4 class="fw-normal">&#8377;76,720</h4>
-                      </div>
-                      <button
-                        class="fw-normal fw-light border-1 px-2 py-1 rounded"
-                      >
-                        View Details
-                      </button>
-                    </div>
-                    <p class="text-muted mt-2">Per Person on twin sharing</p>
-                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted">@user1</h6>
+                  <p class="card-text mt-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Atque ullam minima reiciendis suscipit deserunt quidem
+                    molestias aut.
+                  </p>
                 </div>
               </div>
 
-              <div class="toggledPackagesCards">
-                <!-- package 3  -->
-                <div class="package_card d-flex rounded-1 mb-3">
-                  <div class="package_image_container">
-                    <img
-                      src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_380_h_270_c_fill_g_auto_q_auto:good_f_jpg/v1470718273/Rome_Transport.jpg"
-                      alt=""
-                      class="package_image"
-                    />
-                  </div>
-
-                  <div class="package_info m-2">
-                    <h5 class="fw-normal">Explore France, Swiss & Italy</h5>
-                    <h6 class="">10 Nights, 11 Days</h6>
-                    <hr />
-                    <div
-                      class="
-                        d-flex
-                        flex-row
-                        gap-4
-                        package_info_price
-                        position-relative
-                        align-items-center
-                      "
-                    >
-                      <div class="">
-                        <h6 class="">Starting From</h6>
-                        <h4 class="fw-normal">&#8377;92,000</h4>
-                      </div>
-                      <button
-                        class="fw-normal fw-light border-1 px-2 py-1 rounded"
-                      >
-                        View Details
-                      </button>
+              <!-- card 2 -->
+              <div class="card border-1 d-block" style="width: 14rem; height: 15rem">
+                <div class="card-body card_body">
+                  <div>
+                    <div class="card_image_container">
+                      <img
+                        src="https://images.unsplash.com/photo-1600469802026-4358d4e89df3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVubnl8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                        alt="dog wearing spectacles" class="rounded-circle">
                     </div>
-                    <p class="text-muted mt-2">Per Person on twin sharing</p>
+                    <h5 class="card-title fs-6">Aaron</h5>
                   </div>
-                </div>
-                <!-- package 4  -->
-                <div class="package_card d-flex rounded-1 mb-3">
-                  <div class="package_image_container">
-                    <img
-                      src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_379_h_204_c_fill_g_auto_q_auto:good_f_jpg/v1472197893/Varkala_Map.jpg"
-                      alt=""
-                      class="package_image"
-                    />
-                  </div>
-
-                  <div class="package_info m-2">
-                    <h5 class="fw-normal">Europe in a Nutshell</h5>
-                    <h6 class="">10 Nights, 11 Days</h6>
-                    <hr />
-                    <div
-                      class="
-                        d-flex
-                        flex-row
-                        gap-4
-                        package_info_price
-                        position-relative
-                        align-items-center
-                      "
-                    >
-                      <div class="">
-                        <h6 class="">Starting From</h6>
-                        <h4 class="fw-normal">&#8377;81,990</h4>
-                      </div>
-                      <button
-                        class="fw-normal fw-light border-1 px-2 py-1 rounded"
-                      >
-                        View Details
-                      </button>
-                    </div>
-                    <p class="text-muted mt-2">Per Person on twin sharing</p>
-                  </div>
-                </div>
-                <!-- package 5  -->
-                <div class="package_card d-flex rounded-1 mb-3">
-                  <div class="package_image_container">
-                    <img
-                      src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_380_h_270_c_fill_g_auto_q_auto:good_f_jpg/v1436877368/Amsterdam_s_Canals_7.jpg"
-                      alt=""
-                      class="package_image"
-                    />
-                  </div>
-
-                  <div class="package_info m-2">
-                    <h5 class="fw-normal">European Delight</h5>
-                    <h6 class="">6 Nights, 7 Days</h6>
-                    <hr />
-                    <div
-                      class="
-                        d-flex
-                        flex-row
-                        gap-4
-                        package_info_price
-                        position-relative
-                        align-items-center
-                      "
-                    >
-                      <div class="">
-                        <h6 class="">Starting From</h6>
-                        <h4 class="fw-normal">&#8377;92,990</h4>
-                      </div>
-                      <button
-                        class="fw-normal fw-light border-1 px-2 py-1 rounded"
-                      >
-                        View Details
-                      </button>
-                    </div>
-                    <p class="text-muted mt-2">Per Person on twin sharing</p>
-                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted">@user2</h6>
+                  <p class="card-text mt-3">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Est, cupiditate? Tenetur voluptate commodi quia expedita,
+                    nostrum mollitia deserunt quaerat dolores. Earum,
+                    asperiores iusto!
+                  </p>
                 </div>
               </div>
 
-              <button class="viewMore togglePackages">
-                View less packages
-              </button>
+              <!-- card 3 -->
+              <div class="card border-1 d-block" style="width: 14rem; height: 15rem">
+                <div class="card-body card_body">
+                  <div>
+                    <div class="card_image_container">
+                      <img
+                        src="https://images.unsplash.com/photo-1600469802026-4358d4e89df3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVubnl8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                        alt="dog wearing spectacles" class="rounded-circle">
+                    </div>
+                    <h5 class="card-title fs-6">Daniel</h5>
+                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted">@user3</h6>
+                  <p class="card-text mt-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo quod assumenda quam ducimus dolores iste deleniti
+                    quidem cupiditate, natus excepturi. Lorem, Lorem ipsum
+                    dolor sit, amet consectetur adipisicing elit. Officiis!
+                  </p>
+                </div>
+              </div>
+
+              <!-- card 4 -->
+              <div class="card border-1 d-block" style="width: 14rem; height: 15rem">
+                <div class="card-body card_body">
+                  <div>
+                    <div class="card_image_container">
+                      <img
+                        src="https://images.unsplash.com/photo-1600469802026-4358d4e89df3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVubnl8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                        alt="dog wearing spectacles" class="rounded-circle">
+                    </div>
+                    <h5 class="card-title fs-6">Gavin</h5>
+                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted">@user4</h6>
+                  <p class="card-text mt-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aut voluptatem est nisi voluptates animi ab esse dolorem
+                    doloremque quos?
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- ... -->
-
-          <div>
-            <!-- holiday themes  -->
-            <div
-              class="packages_section p-3 d-flex align-items-center flex-column"
-            >
-              <h4
-                class="mb-3 section_heading text-center"
-                style="color: rgb(99, 97, 97)"
-              >
-                Holiday Themes In Paris
-              </h4>
-
-              <!-- package cards -->
-              <div class="d-flex flex-column gap-3">
-                <!-- package 1  -->
-                <div class="package_card d-flex rounded-1">
-                  <div class="package_image_container">
-                    <img
-                      src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Magnum_w_140_h_140_c_fill_g_auto_q_auto:good_f_jpg/v1499671941/Cathedral_of_Notre_dame_de_Paris.jpg"
-                      alt=""
-                      class="package_image"
-                    />
-                  </div>
-
-                  <div class="package_info m-2">
-                    <h5 class="fw-normal">Family Packages</h5>
-                    <h6 class="">6 Nights, 7 Days</h6>
-                    <hr />
-                    <div
-                      class="
-                        d-flex
-                        flex-row
-                        gap-4
-                        package_info_price
-                        position-relative
-                        align-items-center
-                      "
-                    >
-                      <div class="">
-                        <h6 class="">Starting From</h6>
-                        <h4 class="fw-normal">&#8377;69,990</h4>
-                      </div>
-                      <button
-                        class="fw-normal fw-light border-1 px-2 py-1 rounded"
-                      >
-                        View Details
-                      </button>
+          <!-- slide 2  -->
+          <div class="carousel_slide carousel-item">
+            <div class="
+                  testimonial_cards_container
+                  d-flex
+                  justify-content-evenly
+                ">
+              <!-- card 1 -->
+              <div class="card border-1 d-block" style="width: 14rem; height: 15rem">
+                <div class="card-body card_body">
+                  <div>
+                    <div class="card_image_container">
+                      <img
+                        src="https://images.unsplash.com/photo-1600469802026-4358d4e89df3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVubnl8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                        alt="dog wearing spectacles" class="rounded-circle">
                     </div>
-                    <p class="text-muted mt-2">Per Person on twin sharing</p>
+                    <h5 class="card-title fs-6">Matthew</h5>
                   </div>
-                </div>
-                <!-- package 2 -->
-                <div class="package_card d-flex rounded-1 mb-3">
-                  <div class="package_image_container">
-                    <img
-                      src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Magnum_w_140_h_140_c_fill_g_auto_q_auto:good_f_jpg/v1486638741/DO_NOT_USE_DISCOVER_INDIA_EDITORIAL/Kiss_at_Paris.jpg"
-                      alt=""
-                      class="package_image"
-                    />
-                  </div>
-
-                  <div class="package_info m-2">
-                    <h5 class="fw-normal">Honeymoon Packages</h5>
-                    <h6 class="">7 Nights, 8 Days</h6>
-                    <hr />
-                    <div
-                      class="
-                        d-flex
-                        flex-row
-                        gap-4
-                        package_info_price
-                        position-relative
-                        align-items-center
-                      "
-                    >
-                      <div class="">
-                        <h6 class="">Starting From</h6>
-                        <h4 class="fw-normal">&#8377;1,05,000</h4>
-                      </div>
-                      <button
-                        class="fw-normal fw-light border-1 px-2 py-1 rounded"
-                      >
-                        View Details
-                      </button>
-                    </div>
-                    <p class="text-muted mt-2">Per Person on twin sharing</p>
-                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted">@user5</h6>
+                  <p class="card-text mt-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam, amet numquam ducimus dolorem tempore quod
+                    accusamus itaque quidem, asperiores soluta, incidunt
+                    eveniet repellat!
+                  </p>
                 </div>
               </div>
 
-              <div class="toggledThemesCards">
-                <!-- package 3  -->
-                <div class="package_card d-flex rounded-1 mb-3">
-                  <div class="package_image_container">
-                    <img
-                      src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_400_h_180_c_fill_g_auto_q_auto:good_f_jpg/v1466059731/General_Holiday_Beach.jpg"
-                      alt=""
-                      class="package_image"
-                    />
-                  </div>
-
-                  <div class="package_info m-2">
-                    <h5 class="fw-normal">Beach Tour Packages</h5>
-                    <h6 class="">10 Nights, 11 Days</h6>
-                    <hr />
-                    <div
-                      class="
-                        d-flex
-                        flex-row
-                        gap-4
-                        package_info_price
-                        position-relative
-                        align-items-center
-                      "
-                    >
-                      <div class="">
-                        <h6 class="">Starting From</h6>
-                        <h4 class="fw-normal">&#8377;1,20,000</h4>
-                      </div>
-                      <button
-                        class="fw-normal fw-light border-1 px-2 py-1 rounded"
-                      >
-                        View Details
-                      </button>
+              <!-- card 2 -->
+              <div class="card border-1 d-block" style="width: 14rem; height: 15rem">
+                <div class="card-body card_body">
+                  <div>
+                    <div class="card_image_container">
+                      <img
+                        src="https://images.unsplash.com/photo-1600469802026-4358d4e89df3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVubnl8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                        alt="dog wearing spectacles" class="rounded-circle">
                     </div>
-                    <p class="text-muted mt-2">Per Person on twin sharing</p>
+                    <h5 class="card-title fs-6">Anson</h5>
                   </div>
-                </div>
-                <!-- package 4  -->
-                <div class="package_card d-flex rounded-1 mb-3">
-                  <div class="package_image_container">
-                    <img
-                      src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_400_h_180_c_fill_g_auto_q_auto:good_f_jpg/v1466059728/General_Holiday_Wildlife.jpg"
-                      alt=""
-                      class="package_image"
-                    />
-                  </div>
-
-                  <div class="package_info m-2">
-                    <h5 class="fw-normal">Wildlife Tour Packages</h5>
-                    <h6 class="">9 Nights, 10 Days</h6>
-                    <hr />
-                    <div
-                      class="
-                        d-flex
-                        flex-row
-                        gap-4
-                        package_info_price
-                        position-relative
-                        align-items-center
-                      "
-                    >
-                      <div class="">
-                        <h6 class="">Starting From</h6>
-                        <h4 class="fw-normal">&#8377;1,20,000</h4>
-                      </div>
-                      <button
-                        class="fw-normal fw-light border-1 px-2 py-1 rounded"
-                      >
-                        View Details
-                      </button>
-                    </div>
-                    <p class="text-muted mt-2">Per Person on twin sharing</p>
-                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted">@user6</h6>
+                  <p class="card-text mt-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nobis earum quibusdam suscipit!
+                  </p>
                 </div>
               </div>
 
-              <button class="viewMore toggleThemes">View less themes</button>
+              <!-- card 3 -->
+              <div class="card border-1 d-block" style="width: 14rem; height: 15rem">
+                <div class="card-body card_body">
+                  <div>
+                    <div class="card_image_container">
+                      <img
+                        src="https://images.unsplash.com/photo-1600469802026-4358d4e89df3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVubnl8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                        alt="dog wearing spectacles" class="rounded-circle">
+                    </div>
+                    <h5 class="card-title fs-6">Esther</h5>
+                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted">@user7</h6>
+                  <p class="card-text mt-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint, iure! Officiis blanditiis, nemo cupiditate officia
+                    explicabo maiores alias asperiores repellendus.
+                  </p>
+                </div>
+              </div>
+
+              <!-- card 4 -->
+              <div class="card border-1 d-block" style="width: 14rem; height: 15rem">
+                <div class="card-body card_body">
+                  <div>
+                    <div class="card_image_container">
+                      <img
+                        src="https://images.unsplash.com/photo-1600469802026-4358d4e89df3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVubnl8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                        alt="dog wearing spectacles" class="rounded-circle">
+                    </div>
+                    <h5 class="card-title fs-6">Chanjot</h5>
+                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted">@user8</h6>
+                  <p class="card-text mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Atque odit similique, natus aut vero sint voluptas ab
+                    minima. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Laboriosam, nobis!
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- ... -->
-
-          <div>
-            <!-- popular destinations  -->
-            <div
-              class="packages_section p-3 d-flex flex-column align-items-center"
-            >
-              <h4
-                class="mb-3 section_heading text-center"
-                style="color: rgb(99, 97, 97)"
-              >
-                Popular International Destinations
-              </h4>
-
-              <!-- package cards -->
-              <div class="d-flex flex-column gap-3">
-                <!-- package 1  -->
-                <div class="package_card d-flex rounded-1">
-                  <div class="package_image_container">
-                    <img
-                      src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Magnum_w_140_h_140_c_fill_g_auto_q_auto:good_f_jpg/v4465945664/MarketPlaceHolidays/United%20Arab%20Emirates/Burj_Al_Arab_1__xU6t2Q.jpg"
-                      alt=""
-                      class="package_image"
-                    />
-                  </div>
-
-                  <div class="package_info m-2">
-                    <h5 class="fw-normal">Dubai</h5>
-                    <h6 class="">4 Nights, 5 Days</h6>
-                    <hr />
-                    <div
-                      class="
-                        d-flex
-                        flex-row
-                        gap-4
-                        package_info_price
-                        position-relative
-                        align-items-center
-                      "
-                    >
-                      <div class="">
-                        <h6 class="">Starting From</h6>
-                        <h4 class="fw-normal">&#8377;10,990</h4>
-                      </div>
-                      <button
-                        class="fw-normal fw-light border-1 px-2 py-1 rounded"
-                      >
-                        View Details
-                      </button>
+          <!-- slide 3  -->
+          <div class="carousel_slide carousel-item">
+            <div class="
+                  testimonial_cards_container
+                  d-flex
+                  justify-content-evenly
+                ">
+              <!-- card 1 -->
+              <div class="card border-1 d-block" style="width: 14rem; height: 15rem">
+                <div class="card-body card_body">
+                  <div>
+                    <div class="card_image_container">
+                      <img
+                        src="https://images.unsplash.com/photo-1600469802026-4358d4e89df3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVubnl8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                        alt="dog wearing spectacles" class="rounded-circle">
                     </div>
-                    <p class="text-muted mt-2">Per Person on twin sharing</p>
+                    <h5 class="card-title fs-6">Anant</h5>
                   </div>
-                </div>
-                <!-- package 2 -->
-                <div class="package_card d-flex rounded-1 mb-3">
-                  <div class="package_image_container">
-                    <img
-                      src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Magnum_w_140_h_140_c_fill_g_auto_q_auto:good_f_jpg/v1484820432/Koh_hang.jpg"
-                      alt=""
-                      class="package_image"
-                    />
-                  </div>
-
-                  <div class="package_info m-2">
-                    <h5 class="fw-normal">Maldives</h5>
-                    <h6 class="">4 Nights, 5 Days</h6>
-                    <hr />
-                    <div
-                      class="
-                        d-flex
-                        flex-row
-                        gap-4
-                        package_info_price
-                        position-relative
-                        align-items-center
-                      "
-                    >
-                      <div class="">
-                        <h6 class="">Starting From</h6>
-                        <h4 class="fw-normal">&#8377;22,234</h4>
-                      </div>
-                      <button
-                        class="fw-normal fw-light border-1 px-2 py-1 rounded"
-                      >
-                        View Details
-                      </button>
-                    </div>
-                    <p class="text-muted mt-2">Per Person on twin sharing</p>
-                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted">@user9</h6>
+                  <p class="card-text mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Cumque saepe distinctio cupiditate quis esse debitis.
+                  </p>
                 </div>
               </div>
 
-              <div class="toggledDestinationCards">
-                <!-- package 3  -->
-                <div class="package_card d-flex rounded-1 mb-3">
-                  <div class="package_image_container">
-                    <img
-                      src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Magnum_w_140_h_140_c_fill_g_auto_q_auto:good_f_jpg/v3181724529/MarketPlaceHolidays/Maldives/Filitheyo/MALDIVES7_2VimZ3.JPG"
-                      alt=""
-                      class="package_image"
-                    />
-                  </div>
-
-                  <div class="package_info m-2">
-                    <h5 class="fw-normal">Singapore</h5>
-                    <h6 class="">3 Nights, 4 Days</h6>
-                    <hr />
-                    <div
-                      class="
-                        d-flex
-                        flex-row
-                        gap-4
-                        package_info_price
-                        position-relative
-                        align-items-center
-                      "
-                    >
-                      <div class="">
-                        <h6 class="">Starting From</h6>
-                        <h4 class="fw-normal">&#8377;20,000</h4>
-                      </div>
-                      <button
-                        class="fw-normal fw-light border-1 px-2 py-1 rounded"
-                      >
-                        View Details
-                      </button>
+              <!-- card 2 -->
+              <div class="card border-1 d-block" style="width: 14rem; height: 15rem">
+                <div class="card-body card_body">
+                  <div>
+                    <div class="card_image_container">
+                      <img
+                        src="https://images.unsplash.com/photo-1600469802026-4358d4e89df3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVubnl8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                        alt="dog wearing spectacles" class="rounded-circle">
                     </div>
-                    <p class="text-muted mt-2">Per Person on twin sharing</p>
+                    <h5 class="card-title fs-6">Elson</h5>
                   </div>
-                </div>
-                <!-- package 4  -->
-                <div class="package_card d-flex rounded-1 mb-3">
-                  <div class="package_image_container">
-                    <img
-                      src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_200_h_200_c_fill_g_auto_q_auto:good_f_jpg/v1468237101/Paris_1468237098.jpg"
-                      alt=""
-                      class="package_image"
-                    />
-                  </div>
-
-                  <div class="package_info m-2">
-                    <h5 class="fw-normal">Europe</h5>
-                    <h6 class="">4 Nights, 5 Days</h6>
-                    <hr />
-                    <div
-                      class="
-                        d-flex
-                        flex-row
-                        gap-4
-                        package_info_price
-                        position-relative
-                        align-items-center
-                      "
-                    >
-                      <div class="">
-                        <h6 class="">Starting From</h6>
-                        <h4 class="fw-normal">&#8377;27,990</h4>
-                      </div>
-                      <button
-                        class="fw-normal fw-light border-1 px-2 py-1 rounded"
-                      >
-                        View Details
-                      </button>
-                    </div>
-                    <p class="text-muted mt-2">Per Person on twin sharing</p>
-                  </div>
-                </div>
-                <!-- package 5  -->
-                <div class="package_card d-flex rounded-1 mb-3">
-                  <div class="package_image_container">
-                    <img
-                      src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_200_h_200_c_fill_g_auto_q_auto:good_f_jpg/v1462770668/Bangkok-Wat_Arun.jpg"
-                      alt=""
-                      class="package_image"
-                    />
-                  </div>
-
-                  <div class="package_info m-2">
-                    <h5 class="fw-normal">Thailand</h5>
-                    <h6 class="">4 Nights, 5 Days</h6>
-                    <hr />
-                    <div
-                      class="
-                        d-flex
-                        flex-row
-                        gap-4
-                        package_info_price
-                        position-relative
-                        align-items-center
-                      "
-                    >
-                      <div class="">
-                        <h6 class="">Starting From</h6>
-                        <h4 class="fw-normal">&#8377;21,000</h4>
-                      </div>
-                      <button
-                        class="fw-normal fw-light border-1 px-2 py-1 rounded"
-                      >
-                        View Details
-                      </button>
-                    </div>
-                    <p class="text-muted mt-2">Per Person on twin sharing</p>
-                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted">@user10</h6>
+                  <p class="card-text mt-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem, totam. Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. In dignissimos, eveniet aliquid
+                    laboriosam autem ipsam? Lorem ipsum dolor sit amet.
+                  </p>
                 </div>
               </div>
 
-              <button class="viewMore toggleDestinations">
-                View less destinations
-              </button>
+              <!-- card 3 -->
+              <div class="card border-1 d-block" style="width: 14rem; height: 15rem">
+                <div class="card-body card_body">
+                  <div>
+                    <div class="card_image_container">
+                      <img
+                        src="https://images.unsplash.com/photo-1600469802026-4358d4e89df3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVubnl8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                        alt="dog wearing spectacles" class="rounded-circle">
+                    </div>
+                    <h5 class="card-title fs-6">Apoorv</h5>
+                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted">@user11</h6>
+                  <p class="card-text mt-3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sunt, dolores pariatur quos porro dolorum modi
+                    exercitationem hic quae quam, ullam doloribus atque
+                    suscipit perspiciatis veritatis!
+                  </p>
+                </div>
+              </div>
+
+              <!-- card 4 -->
+              <div class="card border-1 d-block" style="width: 14rem; height: 15rem">
+                <div class="card-body card_body">
+                  <div>
+                    <div class="card_image_container">
+                      <img
+                        src="https://images.unsplash.com/photo-1600469802026-4358d4e89df3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVubnl8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                        alt="dog wearing spectacles" class="rounded-circle">
+                    </div>
+                    <h5 class="card-title fs-6">Sarthak</h5>
+                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted">@user12</h6>
+                  <p class="card-text mt-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Iste inventore ipsam consequuntur unde, nostrum nesciunt.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- 
-
-
-
-
-
-
-
-
-
-
-       -->
-
-      <!-- testimonials  -->
-      <section id="testimonials">
-        <h3 class="my-4 text-center">Testimonials</h3>
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <!-- carousel slides  -->
-          <div class="carousel-inner">
-            <!-- slide 1  -->
-            <div class="carousel_slide carousel-item active">
-              <div
-                class="
-                  testimonial_cards_container
-                  d-flex
-                  justify-content-evenly
-                "
-              >
-                <!-- card 1 -->
-                <div
-                  class="card border-1 d-block"
-                  style="width: 14rem; height: 15rem"
-                >
-                  <div class="card-body card_body">
-                    <h5 class="card-title fs-6">Elisha</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">@user1</h6>
-                    <p class="card-text mt-3">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Atque ullam minima reiciendis suscipit deserunt quidem
-                      molestias aut.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- card 2 -->
-                <div
-                  class="card border-1 d-block"
-                  style="width: 14rem; height: 15rem"
-                >
-                  <div class="card-body card_body">
-                    <h5 class="card-title fs-6">Aaron</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">@user2</h6>
-                    <p class="card-text mt-3">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Est, cupiditate? Tenetur voluptate commodi quia expedita,
-                      nostrum mollitia deserunt quaerat dolores. Earum,
-                      asperiores iusto!
-                    </p>
-                  </div>
-                </div>
-
-                <!-- card 3 -->
-                <div
-                  class="card border-1 d-block"
-                  style="width: 14rem; height: 15rem"
-                >
-                  <div class="card-body card_body">
-                    <h5 class="card-title fs-6">Daniel</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">@user3</h6>
-                    <p class="card-text mt-3">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Illo quod assumenda quam ducimus dolores iste deleniti
-                      quidem cupiditate, natus excepturi. Lorem, Lorem ipsum
-                      dolor sit, amet consectetur adipisicing elit. Officiis!
-                    </p>
-                  </div>
-                </div>
-
-                <!-- card 4 -->
-                <div
-                  class="card border-1 d-block"
-                  style="width: 14rem; height: 15rem"
-                >
-                  <div class="card-body card_body">
-                    <h5 class="card-title fs-6">Gavin</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">@user4</h6>
-                    <p class="card-text mt-3">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Aut voluptatem est nisi voluptates animi ab esse dolorem
-                      doloremque quos?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- slide 2  -->
-            <div class="carousel_slide carousel-item">
-              <div
-                class="
-                  testimonial_cards_container
-                  d-flex
-                  justify-content-evenly
-                "
-              >
-                <!-- card 1 -->
-                <div
-                  class="card border-1 d-block"
-                  style="width: 14rem; height: 15rem"
-                >
-                  <div class="card-body card_body">
-                    <h5 class="card-title fs-6">Matthew</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">@user5</h6>
-                    <p class="card-text mt-3">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Veniam, amet numquam ducimus dolorem tempore quod
-                      accusamus itaque quidem, asperiores soluta, incidunt
-                      eveniet repellat!
-                    </p>
-                  </div>
-                </div>
-
-                <!-- card 2 -->
-                <div
-                  class="card border-1 d-block"
-                  style="width: 14rem; height: 15rem"
-                >
-                  <div class="card-body card_body">
-                    <h5 class="card-title fs-6">Anson</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">@user6</h6>
-                    <p class="card-text mt-3">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Nobis earum quibusdam suscipit!
-                    </p>
-                  </div>
-                </div>
-
-                <!-- card 3 -->
-                <div
-                  class="card border-1 d-block"
-                  style="width: 14rem; height: 15rem"
-                >
-                  <div class="card-body card_body">
-                    <h5 class="card-title fs-6">Esther</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">@user7</h6>
-                    <p class="card-text mt-3">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Sint, iure! Officiis blanditiis, nemo cupiditate officia
-                      explicabo maiores alias asperiores repellendus.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- card 4 -->
-                <div
-                  class="card border-1 d-block"
-                  style="width: 14rem; height: 15rem"
-                >
-                  <div class="card-body card_body">
-                    <h5 class="card-title fs-6">Chanjot</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">@user8</h6>
-                    <p class="card-text mt-3">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Atque odit similique, natus aut vero sint voluptas ab
-                      minima. Lorem ipsum dolor sit amet consectetur adipisicing
-                      elit. Laboriosam, nobis!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- slide 3  -->
-            <div class="carousel_slide carousel-item">
-              <div
-                class="
-                  testimonial_cards_container
-                  d-flex
-                  justify-content-evenly
-                "
-              >
-                <!-- card 1 -->
-                <div
-                  class="card border-1 d-block"
-                  style="width: 14rem; height: 15rem"
-                >
-                  <div class="card-body card_body">
-                    <h5 class="card-title fs-6">Anant</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">@user9</h6>
-                    <p class="card-text mt-3">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Cumque saepe distinctio cupiditate quis esse debitis.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- card 2 -->
-                <div
-                  class="card border-1 d-block"
-                  style="width: 14rem; height: 15rem"
-                >
-                  <div class="card-body card_body">
-                    <h5 class="card-title fs-6">Elson</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">@user10</h6>
-                    <p class="card-text mt-3">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Dolorem, totam. Lorem ipsum, dolor sit amet consectetur
-                      adipisicing elit. In dignissimos, eveniet aliquid
-                      laboriosam autem ipsam? Lorem ipsum dolor sit amet.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- card 3 -->
-                <div
-                  class="card border-1 d-block"
-                  style="width: 14rem; height: 15rem"
-                >
-                  <div class="card-body card_body">
-                    <h5 class="card-title fs-6">Apoorv</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">@user11</h6>
-                    <p class="card-text mt-3">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Sunt, dolores pariatur quos porro dolorum modi
-                      exercitationem hic quae quam, ullam doloribus atque
-                      suscipit perspiciatis veritatis!
-                    </p>
-                  </div>
-                </div>
-
-                <!-- card 4 -->
-                <div
-                  class="card border-1 d-block"
-                  style="width: 14rem; height: 15rem"
-                >
-                  <div class="card-body card_body">
-                    <h5 class="card-title fs-6">Crystal</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">@user12</h6>
-                    <p class="card-text mt-3">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Iste inventore ipsam consequuntur unde, nostrum nesciunt.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- carousel buttons  -->
-          <button
-            class="
+        <!-- carousel buttons  -->
+        <button class="
               testimonial_carousel_button
               carousel-control-prev
               bg-secondary
-            "
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="
+            " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="
               testimonial_carousel_button
               carousel-control-next
               bg-secondary
-            "
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-
-      <!-- 
-
-
-
-
-
-
-
-
-
-
-       -->
-
-      <!-- footer  -->
-      <section id="footer">
-        <footer class="py-2">
-          <div class="row d-flex justify-content-around">
-            <!--  -->
-            <div class="col-2">
-              <h6>DISCOVERING PARIS</h6>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="index.html#header" class="nav-link p-0 text-muted footer_link"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="index.html#explore" class="nav-link p-0 text-muted footer_link"
-                    >Explore</a
-                  >
-                </li>
-                <li class="nav-item mb-2">
-                  <a
-                    href="index.html#testimonials"
-                    class="nav-link p-0 text-muted footer_link"
-                    >Testimonials</a
-                  >
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="index.html#pricing" class="nav-link p-0 text-muted footer_link"
-                    >Pricing</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <!--  -->
-
-            <div class="col-2">
-              <h6>WHAT TO DO IN PARIS?</h6>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted footer_link">What to do in Paris 2021?</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted footer_link">Exhibitions in Paris</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted footer_link">Virtual Events in Paris</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted footer_link">Sporting events in Paris</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted footer_link">Paris by night: hotspots & ideas</a>
-                </li>
-              </ul>
-            </div>
-
-            <!--  -->
-
-            <div class="col-2">
-              <h6>PRACTICAL PARIS</h6>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted footer_link">Planning your stay in Paris</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted footer_link">Getting to Paris</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted footer_link">Plans & maps of Paris</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted footer_link">Money in France</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted footer_link">Useful addresses</a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- newsletter  -->
-            <div class="col-4 offset-1">
-              <form>
-                <h5>Subscribe to our newsletter</h5>
-                <p>Monthly digest of whats new and exciting from us.</p>
-                <div class="d-flex w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden"
-                    >Email address</label
-                  >
-                  <input
-                    id="newsletter1"
-                    type="text"
-                    class="form-control"
-                    placeholder="Email address"
-                  />
-                  <button class="btn text-white newslettr_button" type="button">
-                    Subscribe
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-
-          <hr />
-
-          <div class="text-center py-4 my-4">
-            <p>&copy; 2021 Company, Inc. All rights reserved.</p>
-          </div>
-        </footer>
-      </section>
-    </div>
-
-    <!--
-
-
-
-
-
-
-        
-
-     -->
-
-    <!-- jquery toggles  -->
-    <script src="jquery.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".togglePackages").click(function () {
-          $(".toggledPackagesCards").slideToggle("slow");
-        });
-      });
-
-      $(document).ready(function () {
-        $(".toggleThemes").click(function () {
-          $(".toggledThemesCards").slideToggle("slow");
-        });
-      });
-
-      $(document).ready(function () {
-        $(".toggleDestinations").click(function () {
-          $(".toggledDestinationCards").slideToggle("slow");
-        });
-      });
-    </script>
+            " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
     <!-- 
 
 
+
+
+
+
+
+
+
+
+       -->
+
+    <!-- footer  -->
+    <section id="footer">
+      <footer class="py-2">
+        <div class="row d-flex justify-content-around">
+          <!--  -->
+          <div class="col-2">
+            <h6>DISCOVERING PARIS</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="index.html#header" class="nav-link p-0 text-muted footer_link">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="index.html#explore" class="nav-link p-0 text-muted footer_link">Explore</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="index.html#testimonials" class="nav-link p-0 text-muted footer_link">Testimonials</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="index.html#pricing" class="nav-link p-0 text-muted footer_link">Pricing</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--  -->
+
+          <div class="col-2">
+            <h6>WHAT TO DO IN PARIS?</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer_link">What to do in Paris 2021?</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer_link">Exhibitions in Paris</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer_link">Virtual Events in Paris</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer_link">Sporting events in Paris</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer_link">Paris by night: hotspots & ideas</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--  -->
+
+          <div class="col-2">
+            <h6>PRACTICAL PARIS</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer_link">Planning your stay in Paris</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer_link">Getting to Paris</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer_link">Plans & maps of Paris</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer_link">Money in France</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer_link">Useful addresses</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- newsletter  -->
+          <div class="col-4 offset-1">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of whats new and exciting from us.</p>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
+                <button class="btn text-white newslettr_button" type="button">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="text-center py-4 my-4">
+          <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+        </div>
+      </footer>
+    </section>
+  </div>
+
+  <!--
+
+
+
+
+
+
+        
+
+     -->
+
+  <!-- jquery toggles  -->
+  <script src="jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".togglePackages").click(function () {
+        $(".toggledPackagesCards").slideToggle("slow");
+      });
+    });
+
+    $(document).ready(function () {
+      $(".toggleThemes").click(function () {
+        $(".toggledThemesCards").slideToggle("slow");
+      });
+    });
+
+    $(document).ready(function () {
+      $(".toggleDestinations").click(function () {
+        $(".toggledDestinationCards").slideToggle("slow");
+      });
+    });
+  </script>
+
+  <!-- 
+
+
         
      -->
 
-    <!-- bootstrap js  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- bootstrap js  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
