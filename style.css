@@ -37,7 +37,7 @@ hr {
     color: #000;
 }
 
-a:hover {
+.nav_link:hover {
     text-decoration: solid;
     border-width: 10px;
     border-color: #f54896;
@@ -61,7 +61,7 @@ a:hover {
 HERO */
 
 .hero_info h4 {
-    font-size: 13px;
+    font-size: 20px;
 }
 
 .hero_info h1 {

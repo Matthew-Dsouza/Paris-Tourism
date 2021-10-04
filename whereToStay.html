@@ -27,67 +27,72 @@
 
 <body>
     <!-- registration modal -->
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Registration Form</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <!--  -->
-        <div class="modal-body d-flex flex-wrap align-items-center">
-          <!--  -->
-          <div class="container m-2">
-
-            <!--  -->
-
-            <div class="card">
-              <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">Absolutely unnecessary</h6>
-                <form action="./connect.php" method="post">
-                  <div class="mb-3">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registration Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!--  -->
+                <div class="modal-body d-flex flex-wrap align-items-center">
                     <!--  -->
-                    <label for="firstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="firstName" aria-describedby="firstName"
-                      name="firstName">
-                  </div>
-                  <!--  -->
-                  <div class="mb-3">
-                    <label for="lastName" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" aria-describedby="lastName" name="lastName">
-                  </div>
-                  <!--  -->
-                  <h6 class="card-subtitle mb-2 text-muted">Necessary</h6>
-                  <div class="mb-3">
-                    <label for="userEmail" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp"
-                      name="userEmail">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                  </div>
-                  <!--  -->
-                  <div class="mb-3">
-                    <label for="userPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="userPassword" name="userPassword">
-                  </div>
-                  <!--  -->
-                  <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="userConsent" name="userConsent" required>
-                    <label class="form-check-label" for="userConsent"></label>I agree to the term & conditions.</label>
-                  </div>
-                  <button type="submit" class="btn btn-dark">Submit</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-        </div>
-        <!--  -->
-      </div>
-    </div>
-  </div>
+                    <div class="container m-2">
 
-  <!-- 
+                        <!--  -->
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-muted">Absolutely unnecessary</h6>
+                                <form action="./connect.php" method="post">
+                                    <div class="mb-3">
+                                        <!--  -->
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName"
+                                            aria-describedby="firstName" name="firstName">
+                                    </div>
+                                    <!--  -->
+                                    <div class="mb-3">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName"
+                                            aria-describedby="lastName" name="lastName">
+                                    </div>
+                                    <!--  -->
+                                    <h6 class="card-subtitle mb-2 text-muted">Necessary</h6>
+                                    <div class="mb-3">
+                                        <label for="userEmail" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="userEmail"
+                                            aria-describedby="emailHelp" name="userEmail">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                            else.</div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="mb-3">
+                                        <label for="userPassword" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="userPassword"
+                                            name="userPassword">
+                                    </div>
+                                    <!--  -->
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="userConsent"
+                                            name="userConsent" required>
+                                        <label class="form-check-label" for="userConsent"></label>I agree to the term &
+                                        conditions.</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-dark">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+                <!--  -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 
 
 
     
@@ -100,27 +105,41 @@
 
      -->
 
-  <!-- navbar  -->
-  <nav class="navbar" id="header">
-    <div class="website_brand">
-      <a href="./index.html">
-        <img src="./logo.jpg" alt="" class="website_brand_logo" />
-      </a>
-    </div>
+    <!-- navbar  -->
+    <nav class="navbar" id="header">
+        <div class="website_brand">
+            <a href="./index.html">
+                <img src="./logo.jpg" alt="" class="website_brand_logo" />
+            </a>
+        </div>
 
-    <div class="nav_items">
-      <a href="./index.html" class="nav_link">Home</a>
-      <a href="./discover.html" class="nav_link">Discover</a>
-      <a href="./shopping.html" class="nav_link">Shopping</a>
-      <a href="./dining.html" class="nav_link">Dining</a>
-      <a href="./whereToStay.html" class="nav_link">Accommodations</a>
-      <button type="button" class="contact_button btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        <strong>Register</strong>
-      </button>
-    </div>
-  </nav>
+        <div class="nav_items">
+            <a href="./index.html" class="nav_link">Home</a>
+            <a href="./discover.html" class="nav_link">Discover</a>
+            <a href="./shopping.html" class="nav_link">Shopping</a>
+            <a href="./dining.html" class="nav_link">Dining</a>
 
-  <!-- 
+            <div class="dropdown">
+                <a class="dropdown-toggle nav_link" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Accommodations
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="whereToStay.html#focus_on">Focus on</a></li>
+                    <li><a class="dropdown-item" href="whereToStay.html#view_options">View options</a></li>
+                    <li><a class="dropdown-item" href="whereToStay.html#find_an_accomodation">Find an accommodation</a>
+                    </li>
+                </ul>
+            </div>
+
+            <button type="button" class="contact_button btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <strong>Register</strong>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 
 
 
     
@@ -134,7 +153,7 @@
      -->
 
     <div class="container">
-        <section class="shopping_section">
+        <section class="shopping_section pt-3" id="focus_on">
             <h2 class="text-center fw-bold mb-5">Where to sleep in Paris?</h2>
 
             <h3 class="fw-light mb-2">FOCUS ON</h3>
@@ -171,7 +190,7 @@
                 </div>
 
                 <!-- section#2 -->
-                <div class="d-flex flex-wrap gap-4 justify-content-evenly my-5">
+                <div class="d-flex flex-wrap gap-4 justify-content-evenly my-5" id="view_options">
                     <!-- card#1 -->
                     <div class="card section_info_cards" style="width: 16rem">
                         <img src="https://en.parisinfo.com/var/otcp/sites/images/_aliases/liste_sub_rubric/node_43/node_51/node_234/vignette-de-dossier-palaces-parisiens-630x405/161617-4-fre-FR/Vignette-de-dossier-Palaces-parisiens-630x405.jpg"
@@ -271,8 +290,8 @@
                 </div>
 
                 <!-- section#3 -->
-                <div class="my-5">
-                    <h3 class="text-center fw-light mb-3" style="font-size: 35px">
+                <div class="my-5 pt-4" id="find_an_accomodation">
+                    <h3 class="text-center fw-light mb-3 pb-2" style="font-size: 35px">
                         FIND AN ACCOMMODATION
                     </h3>
 
@@ -302,12 +321,12 @@
                                             class="nav-link p-0 text-muted footer_link">Explore</a>
                                     </li>
                                     <li class="nav-item mb-2">
-                                        <a href="index.html#testimonials"
-                                            class="nav-link p-0 text-muted footer_link">Testimonials</a>
-                                    </li>
-                                    <li class="nav-item mb-2">
                                         <a href="index.html#pricing"
                                             class="nav-link p-0 text-muted footer_link">Pricing</a>
+                                    </li>
+                                    <li class="nav-item mb-2">
+                                        <a href="index.html#testimonials"
+                                            class="nav-link p-0 text-muted footer_link">Testimonials</a>
                                     </li>
                                 </ul>
                             </div>
@@ -315,26 +334,26 @@
                             <!--  -->
 
                             <div class="col-2">
-                                <h6>WHAT TO DO IN PARIS?</h6>
+                                <h6>SHOPPING IN PARIS</h6>
                                 <ul class="nav flex-column">
                                     <li class="nav-item mb-2">
-                                        <a href="#" class="nav-link p-0 text-muted footer_link">What to do in Paris
-                                            2021?</a>
+                                        <a href="shopping.html#sunday_shopping"
+                                            class="nav-link p-0 text-muted footer_link">Sunday shopping in Paris</a>
                                     </li>
                                     <li class="nav-item mb-2">
-                                        <a href="#" class="nav-link p-0 text-muted footer_link">Exhibitions in Paris</a>
+                                        <a href="shopping.html#museum_shopping"
+                                            class="nav-link p-0 text-muted footer_link">Museum shopping</a>
                                     </li>
                                     <li class="nav-item mb-2">
-                                        <a href="#" class="nav-link p-0 text-muted footer_link">Virtual Events in
-                                            Paris</a>
+                                        <a href="#" class="nav-link p-0 text-muted footer_link">Shopping centres</a>
                                     </li>
                                     <li class="nav-item mb-2">
-                                        <a href="#" class="nav-link p-0 text-muted footer_link">Sporting events in
-                                            Paris</a>
+                                        <a href="#" class="nav-link p-0 text-muted footer_link">Souvenirs</a>
                                     </li>
                                     <li class="nav-item mb-2">
-                                        <a href="#" class="nav-link p-0 text-muted footer_link">Paris by night: hotspots
-                                            & ideas</a>
+                                        <a href="shopping.html#arty_shopping"
+                                            class="nav-link p-0 text-muted footer_link">Concept stores and arty shopping
+                                        </a>
                                     </li>
                                 </ul>
                             </div>

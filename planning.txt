@@ -13,7 +13,4 @@ php
 mysql
 regex
 
-things that can be done in the future to improve the performance
-
-- compress the images
-- use better folder implementation
+NEED TO ADD JQUERY CAROUSEL
