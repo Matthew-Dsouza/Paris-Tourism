@@ -11,6 +11,24 @@ javascript / jquery ✅
 bootstrap ✅
 php
 mysql
-regex
 
-NEED TO ADD JQUERY CAROUSEL
+
+Footer has in-page and cross page routing
+
+$_POST is a PHP super global variable which is used to collect form data after submitting an HTML form with method="post".
+
+The connect() / mysqli_connect() function opens a new connection to the MySQL server.
+
+
+Used jquery for the toggle function. Also used the owl carousel package for the Jquery library. To diversify the carousels. Since bootstrap carousels have very limited functioning. Using selected carousel packages we can overcome that issue
+
+
+
+
+Make Sure All Content Is Easily Accessible
+Add Alt Text to All Images
+Choose Your Colors Carefully
+Use Headers to Structure Your Content Correctly
+Design Your Forms for Accessibility
+Don’t Use Tables for Anything Except Tabular Data
+Avoid Automatic Media and Navigation

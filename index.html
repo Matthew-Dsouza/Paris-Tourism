@@ -42,26 +42,35 @@
                   <div class="mb-3">
                     <!--  -->
                     <label for="firstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="firstName" aria-describedby="firstName"
-                      name="firstName">
+                    <input type="text" class="form-control" id="firstName" aria-describedby="firstName" name="firstName"
+                      pattern="[A-Za-z]{3,20}"
+                      title="User's Name must be between 3 and 20 characters in length and contain only letters."
+                      required>
                   </div>
                   <!--  -->
                   <div class="mb-3">
                     <label for="lastName" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" aria-describedby="lastName" name="lastName">
+                    <input type="text" class="form-control" id="lastName" aria-describedby="lastName" name="lastName"
+                      pattern="[A-Za-z]{3,20}"
+                      title="User's Surname must be between 3 and 20 characters in length and contain only letters."
+                      required>
                   </div>
                   <!--  -->
                   <h6 class="card-subtitle mb-2 text-muted">Necessary</h6>
                   <div class="mb-3">
                     <label for="userEmail" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp"
-                      name="userEmail">
+                      name="userEmail" pattern="[A-Za-z\.\@]{5,20}"
+                      title="User's Email must be between 3 and 20 characters in length and contain only letters."
+                      required>
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                   </div>
                   <!--  -->
                   <div class="mb-3">
                     <label for="userPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="userPassword" name="userPassword">
+                    <input type="password" class="form-control" id="userPassword" name="userPassword"
+                      pattern="[A-Za-z\.]{8,20}" title="Password must be between 8 and 20 characters in length."
+                      required>
                   </div>
                   <!--  -->
                   <div class="mb-3 form-check">
@@ -108,10 +117,11 @@
       <a href="./dining.html" class="nav_link">Dining</a>
 
       <div class="dropdown">
-        <a class="dropdown-toggle nav_link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="dropdown-toggle nav_link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+          aria-expanded="false">
           Accommodations
         </a>
-      
+
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
           <li><a class="dropdown-item" href="whereToStay.html#focus_on">Focus on</a></li>
           <li><a class="dropdown-item" href="whereToStay.html#view_options">View options</a></li>
@@ -1133,7 +1143,8 @@
             <h6>SHOPPING IN PARIS</h6>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a href="shopping.html#sunday_shopping" class="nav-link p-0 text-muted footer_link">Sunday shopping in Paris</a>
+                <a href="shopping.html#sunday_shopping" class="nav-link p-0 text-muted footer_link">Sunday shopping in
+                  Paris</a>
               </li>
               <li class="nav-item mb-2">
                 <a href="shopping.html#museum_shopping" class="nav-link p-0 text-muted footer_link">Museum shopping</a>
@@ -1145,7 +1156,8 @@
                 <a href="#" class="nav-link p-0 text-muted footer_link">Souvenirs</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="shopping.html#arty_shopping" class="nav-link p-0 text-muted footer_link">Concept stores and arty shopping
+                <a href="shopping.html#arty_shopping" class="nav-link p-0 text-muted footer_link">Concept stores and
+                  arty shopping
                 </a>
               </li>
             </ul>
@@ -1209,6 +1221,7 @@
         
 
      -->
+
 
   <!-- jquery toggles  -->
   <script src="jquery.js"></script>
